@@ -4,6 +4,7 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/kben19/smmob/pkg/domain/attack"
 	"github.com/kben19/smmob/pkg/domain/travel"
 	"github.com/kben19/smmob/pkg/resource/api"
 	"github.com/kben19/smmob/pkg/usecase"
@@ -22,7 +23,8 @@ func Init() UseCases {
 	})
 
 	domainTravel := travel.InitDomainTravel(resourceAPI)
-	useCase.travel = usecase.InitUsecaseTravel(domainTravel)
+	domainAttack := attack.InitDomainAttack(resourceAPI)
+	useCase.travel = usecase.InitUsecaseTravel(domainTravel, domainAttack)
 
 	return useCase
 }

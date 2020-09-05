@@ -2,9 +2,9 @@ package travel
 
 import (
 	"encoding/json"
-	"github.com/kben19/smmob/pkg/common"
 	"log"
 
+	"github.com/kben19/smmob/pkg/common"
 	"github.com/kben19/smmob/pkg/common/types"
 )
 

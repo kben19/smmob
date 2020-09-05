@@ -26,9 +26,11 @@ const (
 
 // Url Constants
 const (
+	AttackPath    = "/npcs/attack/"
 	OriginAPISMMO = "https://api.simple-mmo.com/api"
 	OriginSMMO    = "https://web.simple-mmo.com"
 	RefererTravel = OriginSMMO + "/travel"
+	RefererAttack = OriginSMMO + AttackPath
 )
 
 // Messages
@@ -39,7 +41,8 @@ const (
 
 // Param Key
 const (
-	ParamToken    = "token"
-	ParamAPIToken = "api_token"
-	ParamHash     = "hash"
+	ParamToken         = "token"
+	ParamAPIToken      = "api_token"
+	ParamHash          = "hash"
+	ParamSpecialAttack = "special_attack"
 )
