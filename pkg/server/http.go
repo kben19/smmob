@@ -7,9 +7,13 @@ import (
 
 func RegisterHandler(uc UseCases) {
 	// Init handler struct
+	travel := InitHandlerTravel(uc.travel)
 
 	// HTTP Handler
 	http.HandleFunc("/", indexHandler)
+
+	// Travel
+	http.HandleFunc("/api/travel", travel.HandlePerformTravel)
 }
 
 // indexHandler responds to requests with our greeting.
