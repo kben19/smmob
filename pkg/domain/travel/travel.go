@@ -12,7 +12,7 @@ const (
 	logTagDomainTravel         = " [DomainTravel]"
 	logTagDomainTravelDoTravel = logTagDomainTravel + "[DoTravel]"
 
-	UrlDoTravel = common.RefererTravel + "/perform"
+	UrlDoTravel = common.OriginAPISMMO + "/travel/perform"
 )
 
 func (d DomainTravel) DoTravel(payload types.TravelPostPayload, header types.TravelPostHeader) (types.TravelPostResponse, error) {

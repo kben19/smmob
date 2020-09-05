@@ -6,10 +6,10 @@ type TravelPostHeader struct {
 }
 
 type TravelPostPayload struct {
-	Token           string `json:"token"`
-	APIToken        string `json:"api_token"`
-	TestDataContent string `json:"test_data_content"`
-	Hash            string `json:"hash"`
+	Token    string `json:"token"`
+	APIToken string `json:"api_token"`
+	TestData string `json:"test_data"`
+	Hash     string `json:"hash"`
 }
 
 type TravelPostResponse struct {

@@ -26,8 +26,9 @@ const (
 
 // Url Constants
 const (
-	OriginAPISMMO = "https://api.simple-mmo.com"
-	RefererTravel = OriginAPISMMO + "/travel"
+	OriginAPISMMO = "https://api.simple-mmo.com/api"
+	OriginSMMO    = "https://web.simple-mmo.com"
+	RefererTravel = OriginSMMO + "/travel"
 )
 
 // Messages

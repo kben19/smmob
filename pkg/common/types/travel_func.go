@@ -13,7 +13,7 @@ func (p TravelPostPayload) Map() map[string]string {
 	mapResult := map[string]string{
 		"_token":       p.Token,
 		"api_token":    p.APIToken,
-		"testdata":     p.TestDataContent,
+		"testdata":     p.TestData,
 		"hash_fj8n3u7": p.Hash,
 	}
 	return mapResult

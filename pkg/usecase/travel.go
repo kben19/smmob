@@ -16,7 +16,7 @@ func (u UsecaseTravel) PerformTravel(token string, apiToken string, hash string)
 	var header types.TravelPostHeader
 	header.XCSRFToken = token
 	header.ContentType = common.ContentTypeForm
-	header.Origin = common.OriginAPISMMO
+	header.Origin = common.OriginSMMO
 	header.Referer = common.RefererTravel
 	header.SecFetchMode = "cors"
 
@@ -24,7 +24,7 @@ func (u UsecaseTravel) PerformTravel(token string, apiToken string, hash string)
 	payload.Token = token
 	payload.APIToken = apiToken
 	payload.Hash = hash
-	payload.TestDataContent = "testdatacontent"
+	payload.TestData = "testdatacontent"
 
 	response, err := u.domain.DoTravel(payload, header)
 	if err != nil {
