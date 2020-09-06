@@ -14,6 +14,7 @@ type UsecaseTravel struct {
 type UsecaseTravelItf interface {
 	PerformTravel(token string, apiToken string, hash string) (types.TravelPostResponse, error)
 	PerformTravelAndAttack(token string, apiToken string, hash string, specialAttack bool) ([]interface{}, error)
+	PerformTravelAndAttackLoop(token string, apiToken string, hash string, specialAttack bool, loop int) (types.TravelAttackLoop, error)
 }
 
 func InitUsecaseTravel(domainTravel travel.DomainTravelItf, domainAttack attack.DomainAttackItf) UsecaseTravelItf {

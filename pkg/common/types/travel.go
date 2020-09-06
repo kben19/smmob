@@ -30,3 +30,21 @@ type TravelPostResponse struct {
 	GuildGoldIncrease       float64 `json:"guild_gold_increase"`
 	GuildExpIncrease        float64 `json:"guild_exp_increase"`
 }
+
+type TravelAttackLoop struct {
+	Journey []interface{}           `json:"journey"`
+	Summary TravelAttackLoopSummary `json:"summary"`
+}
+
+type TravelAttackLoopSummary struct {
+	TotalEXP          float64          `json:"total_exp"`
+	TotalGold         float64          `json:"total_gold"`
+	TotalItem         int              `json:"total_item"`
+	TotalEvent        int              `json:"total_event"`
+	TotalEventGold    int              `json:"total_event_gold"`
+	TotalEventEXP     int              `json:"total_event_exp"`
+	TotalEventItem    int              `json:"total_event_item"`
+	TotalEventMonster int              `json:"total_event_monster"`
+	TotalEventBattle  int              `json:"total_event_battle"`
+	ItemList          []AttackItemDrop `json:"item_list"`
+}

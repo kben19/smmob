@@ -20,3 +20,8 @@ type AttackPostResponse struct {
 	ItemDrop        string `json:"item_drop"`
 	EnemyDeath      bool   `json:"they_are_dead"`
 }
+
+type AttackItemDrop struct {
+	ItemURL  string `json:"item_url"`
+	ItemName string `json:"item_name"`
+}

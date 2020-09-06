@@ -45,4 +45,5 @@ const (
 	ParamAPIToken      = "api_token"
 	ParamHash          = "hash"
 	ParamSpecialAttack = "special_attack"
+	ParamLoop          = "loop"
 )

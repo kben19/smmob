@@ -15,6 +15,7 @@ func RegisterHandler(uc UseCases) {
 	// Travel
 	http.HandleFunc("/api/travel", travel.HandlePerformTravel)
 	http.HandleFunc("/api/travelattack", travel.HandleTravelAttack)
+	http.HandleFunc("/api/travelattack/loop", travel.HandleTravelAttackLoop)
 }
 
 // indexHandler responds to requests with our greeting.

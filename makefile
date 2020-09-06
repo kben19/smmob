@@ -8,3 +8,7 @@ build:
 run:
 	make build
 	@./SMMOB
+
+# gcloud deploy command
+deploy:
+	@gcloud app deploy
